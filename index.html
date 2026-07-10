@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Quiz App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📚 Flashcard Quiz App</h1>
+
+        <p class="subtitle">
+            Learn Smarter • Flip • Practice • Repeat
+        </p>
+
+        <!-- Flashcard -->
+        <div class="card-container">
+
+            <div class="flashcard" id="flashcard">
+
+                <!-- FRONT -->
+
+                <div class="front">
+
+                    <h2 id="question">
+                        Question
+                    </h2>
+
+                </div>
+
+                <!-- BACK -->
+
+                <div class="back">
+
+                    <h2>Answer</h2>
+
+                    <p id="answer"></p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="top-buttons">
+
+            <button id="flipBtn">
+                Show Answer
+            </button>
+
+        </div>
+
+        <div class="navigation">
+
+            <button id="prevBtn">
+                ⬅ Previous
+            </button>
+
+            <button id="nextBtn">
+                Next ➡
+            </button>
+
+        </div>
+
+        <!-- Add Edit Delete -->
+
+        <div class="editor">
+
+            <h2>Create Your Flashcards</h2>
+
+            <input
+                type="text"
+                id="questionInput"
+                placeholder="Enter Question">
+
+            <textarea
+                id="answerInput"
+                placeholder="Enter Answer"></textarea>
+
+            <div class="editor-buttons">
+
+                <button id="addBtn">
+                    ➕ Add Card
+                </button>
+
+                <button
+                    id="updateBtn"
+                    style="display:none;">
+                    ✏ Update Card
+                </button>
+
+                <button id="deleteBtn">
+                    🗑 Delete Current Card
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
